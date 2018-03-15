@@ -69,6 +69,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VrG-3b-jIX">
                                 <rect key="frame" x="164" y="68" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeAutorefresh:" destination="nra-99-jqY" eventType="valueChanged" id="7Xs-xe-f2e"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mudar após x segundos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-Pp-dxw">
                                 <rect key="frame" x="16" y="132" width="343" height="34"/>
@@ -77,10 +80,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-4d-i8e">
-                                <rect key="frame" x="47" y="189" width="299" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Esquema de cores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5e-Ed-t7q">
                                 <rect key="frame" x="16" y="254" width="343" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,12 +94,28 @@
                                     <segment title="Claro"/>
                                     <segment title="Escuro"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeColorScheme:" destination="nra-99-jqY" eventType="valueChanged" id="Ht8-rm-zFL"/>
+                                </connections>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-4d-i8e">
+                                <rect key="frame" x="47" y="186" width="299" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeTimeInterval:" destination="nra-99-jqY" eventType="valueChanged" id="VZa-0u-R1k"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ApY-dy-OX1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configuracoes" image="settings" id="kKx-ph-vaS"/>
+                    <connections>
+                        <outlet property="lbTimeInterval" destination="gdh-Pp-dxw" id="PKb-SK-drB"/>
+                        <outlet property="scColorScheme" destination="Xps-rg-qAg" id="hUE-Nx-Dku"/>
+                        <outlet property="slTimeInterval" destination="dcl-4d-i8e" id="8vv-uz-PnU"/>
+                        <outlet property="swAutorefresh" destination="VrG-3b-jIX" id="ggw-gN-RQL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVd-Du-NmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
