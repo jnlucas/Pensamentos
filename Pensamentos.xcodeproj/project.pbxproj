@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		AC14E0C12059DAB100689AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0C02059DAB100689AB9 /* AppDelegate.swift */; };
-		AC14E0C32059DAB100689AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0C22059DAB100689AB9 /* ViewController.swift */; };
+		AC14E0C32059DAB100689AB9 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0C22059DAB100689AB9 /* QuotesViewController.swift */; };
 		AC14E0C62059DAB100689AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC14E0C42059DAB100689AB9 /* Main.storyboard */; };
 		AC14E0C82059DAB100689AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC14E0C72059DAB100689AB9 /* Assets.xcassets */; };
 		AC14E0CB2059DAB100689AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC14E0C92059DAB100689AB9 /* LaunchScreen.storyboard */; };
+		AC14E0D32059E24300689AB9 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0D22059E24300689AB9 /* ConfigViewController.swift */; };
+		AC14E0D52059E25400689AB9 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0D42059E25400689AB9 /* SaveViewController.swift */; };
+		AC14E0D72059F54000689AB9 /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0D62059F54000689AB9 /* QuotesManager.swift */; };
+		AC14E0D92059F59D00689AB9 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0D82059F59D00689AB9 /* Quote.swift */; };
+		AC14E0DB2059F6E300689AB9 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = AC14E0DA2059F6E300689AB9 /* quotes.json */; };
+		AC14E0DD2059FCEF00689AB9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14E0DC2059FCEF00689AB9 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC14E0BD2059DAB100689AB9 /* Pensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC14E0C02059DAB100689AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC14E0C22059DAB100689AB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC14E0C22059DAB100689AB9 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		AC14E0C52059DAB100689AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC14E0C72059DAB100689AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC14E0CA2059DAB100689AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC14E0CC2059DAB100689AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC14E0D22059E24300689AB9 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		AC14E0D42059E25400689AB9 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		AC14E0D62059F54000689AB9 /* QuotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = "<group>"; };
+		AC14E0D82059F59D00689AB9 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		AC14E0DA2059F6E300689AB9 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		AC14E0DC2059FCEF00689AB9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +66,18 @@
 		AC14E0BF2059DAB100689AB9 /* Pensamentos */ = {
 			isa = PBXGroup;
 			children = (
+				AC14E0DA2059F6E300689AB9 /* quotes.json */,
 				AC14E0C02059DAB100689AB9 /* AppDelegate.swift */,
-				AC14E0C22059DAB100689AB9 /* ViewController.swift */,
+				AC14E0C22059DAB100689AB9 /* QuotesViewController.swift */,
 				AC14E0C42059DAB100689AB9 /* Main.storyboard */,
 				AC14E0C72059DAB100689AB9 /* Assets.xcassets */,
 				AC14E0C92059DAB100689AB9 /* LaunchScreen.storyboard */,
 				AC14E0CC2059DAB100689AB9 /* Info.plist */,
+				AC14E0D22059E24300689AB9 /* ConfigViewController.swift */,
+				AC14E0D42059E25400689AB9 /* SaveViewController.swift */,
+				AC14E0D62059F54000689AB9 /* QuotesManager.swift */,
+				AC14E0D82059F59D00689AB9 /* Quote.swift */,
+				AC14E0DC2059FCEF00689AB9 /* Configuration.swift */,
 			);
 			path = Pensamentos;
 			sourceTree = "<group>";
@@ -123,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC14E0DB2059F6E300689AB9 /* quotes.json in Resources */,
 				AC14E0CB2059DAB100689AB9 /* LaunchScreen.storyboard in Resources */,
 				AC14E0C82059DAB100689AB9 /* Assets.xcassets in Resources */,
 				AC14E0C62059DAB100689AB9 /* Main.storyboard in Resources */,
@@ -136,8 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC14E0C32059DAB100689AB9 /* ViewController.swift in Sources */,
+				AC14E0D72059F54000689AB9 /* QuotesManager.swift in Sources */,
+				AC14E0C32059DAB100689AB9 /* QuotesViewController.swift in Sources */,
+				AC14E0DD2059FCEF00689AB9 /* Configuration.swift in Sources */,
+				AC14E0D52059E25400689AB9 /* SaveViewController.swift in Sources */,
 				AC14E0C12059DAB100689AB9 /* AppDelegate.swift in Sources */,
+				AC14E0D92059F59D00689AB9 /* Quote.swift in Sources */,
+				AC14E0D32059E24300689AB9 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
